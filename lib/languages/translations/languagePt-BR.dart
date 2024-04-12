@@ -517,7 +517,7 @@ class LanguagePtBr extends Languages {
   @override
   String get labelArtworkScaling => 'Escala da Arte de Capa';
   @override
-  String get labelArtworkScalingDescription => 'Recorte a arte de capa e plano de fundo no player de música'
+  String get labelArtworkScalingDescription => 'Recorte a arte de capa e plano de fundo no player de música';
   @override
   String get labelBackgroundParallax => 'Parallax de Plano de Fundo';
   @override
