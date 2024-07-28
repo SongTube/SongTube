@@ -80,7 +80,7 @@ class ContentService {
       return file;
     } else {
       final channel = await ChannelExtractor.channelInfo(channelUrl);
-      final avatarUrl = channel.avatarUrl;
+      final avatarUrl = channel.avatars?.first;
       final data = await http.get(Uri.parse(avatarUrl!));
       final bytes = data.bodyBytes;
       file.writeAsBytes(bytes);

@@ -119,7 +119,7 @@ class _DownloadContentMenuState extends State<DownloadContentMenu> {
                                 iconEnabledColor: provider.currentColors.vibrant,
                                 elevation: 0,
                                 style: TextStyle(
-                                  color: Theme.of(context).textTheme.bodyText1!.color,
+                                  color: Theme.of(context).textTheme.bodyMedium!.color,
                                   fontFamily: 'Product Sans',
                                   fontWeight: FontWeight.w600,
                                   fontSize: 12

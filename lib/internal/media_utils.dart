@@ -8,10 +8,17 @@ import 'package:audio_tagger/audio_tags.dart' as tags;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
+import 'package:image_picker/image_picker.dart';
+// ignore: depend_on_referenced_packages
+import 'package:image_picker_android/image_picker_android.dart';
+// ignore: depend_on_referenced_packages
+import 'package:image_picker_platform_interface/image_picker_platform_interface.dart';
 import 'package:newpipeextractor_dart/newpipeextractor_dart.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:validators/validators.dart';
+
 import 'package:songtube/internal/artwork_manager.dart';
 import 'package:songtube/internal/cache_utils.dart';
 import 'package:songtube/internal/enums/download_type.dart';
@@ -20,7 +27,6 @@ import 'package:songtube/internal/models/audio_tags.dart';
 import 'package:songtube/internal/models/colors_palette.dart';
 import 'package:songtube/internal/models/download/download_info.dart';
 import 'package:songtube/internal/models/song_item.dart';
-import 'package:validators/validators.dart';
 
 class MediaUtils {
 
@@ -215,7 +221,7 @@ class MediaUtils {
     } else {
       try {
         Stopwatch paletteStopwatch = Stopwatch()..start();
-        final result = await PaletteGenerator.fromImageProvider(NetworkImage(video.videoInfo.thumbnailUrl!));
+        final result = await PaletteGenerator.fromImageProvider(NetworkImage(video.videoInfo.thumbnails!.first));
         paletteStopwatch.stop();
         if (kDebugMode) {
           print('Palette: ${paletteId(video.videoInfo.id!)} took ${paletteStopwatch.elapsed.inMilliseconds}ms');
@@ -280,6 +286,16 @@ class MediaUtils {
     return null;
   }
   
+  static Future<XFile?> pickImage() async {
+    final ImagePickerPlatform imagePickerImplementation =
+      ImagePickerPlatform.instance;
+    if (imagePickerImplementation is ImagePickerAndroid) {
+      imagePickerImplementation.useAndroidPhotoPicker = true;
+    }
+    final picker = ImagePicker();
+    return await picker.pickImage(source: ImageSource.gallery);
+  }
+
 }
 
 extension Unique<E, Id> on List<E> {

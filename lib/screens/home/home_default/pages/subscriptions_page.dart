@@ -89,7 +89,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
                   final index = ind-1;
                   final channel = contentProvider.channelSubscriptions[index];
                   return ChannelTile(
-                    channel: ChannelInfoItem(channel.url, channel.name, '', '', null, -1),
+                    channel: ChannelInfoItem(channel.url, channel.name, '', [], null, -1),
                     size: ChannelTileSize.small,
                     forceHighQuality: true,
                   );

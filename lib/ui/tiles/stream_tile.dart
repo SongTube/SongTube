@@ -221,11 +221,11 @@ class StreamTileExpanded extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        ChannelImage(channelUrl: stream.uploaderUrl, heroId: stream.id!, channelName: stream.uploaderName ?? '', highQuality: true, onTap: () {
+        ChannelImage(channelUrl: stream.uploaderUrl, imageUrl: stream.uploaderAvatars!.isNotEmpty ? stream.uploaderAvatars!.last : null, heroId: stream.id!, channelName: stream.uploaderName ?? '', highQuality: true, onTap: () {
           UiUtils.pushRouteAsync(context, ChannelPage(infoItem: ChannelInfoItem(
               stream.uploaderUrl,
               stream.uploaderName,
-              '', '', null, -1
+              '', [], null, -1
           )));
         }),
         const SizedBox(width: 12),

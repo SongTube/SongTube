@@ -267,7 +267,7 @@ class StAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler {
         id: audioUrl,
         title: youtubeVideo.videoInfo.name!,
         duration: Duration(milliseconds: youtubeVideo.videoInfo.length!),
-        artUri: Uri.parse(youtubeVideo.videoInfo.thumbnailUrl!)
+        artUri: Uri.parse(youtubeVideo.videoInfo.thumbnails!.first)
       );
       // Resume Playback
       await stop();

@@ -3,23 +3,8 @@ import 'package:songtube/internal/global.dart';
 
 ThemeData lightTheme() {
   return ThemeData.light(useMaterial3: false).copyWith(
-    toggleableActiveColor: accentColor,
     primaryColor: accentColor,
     brightness: Brightness.dark,
-    textTheme: const TextTheme(
-      headline5: TextStyle(
-        color: Colors.black
-      ),
-      bodyText1: TextStyle(
-        color: Colors.black
-      ),
-      bodyText2: TextStyle(
-        color: Colors.black
-      ),
-      caption: TextStyle(
-        color: Colors.black
-      ),
-    ),
     scaffoldBackgroundColor: const Color.fromARGB(255, 247, 247, 247),
     cardColor: const Color.fromARGB(255, 255, 255, 255),
     inputDecorationTheme: InputDecorationTheme(

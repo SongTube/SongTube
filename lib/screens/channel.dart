@@ -48,7 +48,7 @@ class _ChannelPageState extends State<ChannelPage> with TickerProviderStateMixin
   }
 
   void loadChannelUploads() async {
-    channelUploads = await ChannelExtractor.getChannelUploads(widget.infoItem.url!);
+    channelUploads = await ChannelExtractor.getChannelUploads(channel!.url!);
     setState(() {});
   }
 
@@ -79,8 +79,8 @@ class _ChannelPageState extends State<ChannelPage> with TickerProviderStateMixin
         padding: const EdgeInsets.only(left: 8),
         controller: tabController,
         isScrollable: true,
-        labelColor: Theme.of(context).textTheme.bodyText1!.color,
-        unselectedLabelColor: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(0.8),
+        labelColor: Theme.of(context).textTheme.bodyMedium!.color,
+        unselectedLabelColor: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(0.8),
         labelStyle: smallTextStyle(context).copyWith(fontWeight: FontWeight.w800, letterSpacing: 0.4),
         unselectedLabelStyle: smallTextStyle(context).copyWith(fontWeight: FontWeight.normal, letterSpacing: 0.4),
         
@@ -120,7 +120,7 @@ class _ChannelPageState extends State<ChannelPage> with TickerProviderStateMixin
                     fadeCurve: Curves.ease,
                     fit: BoxFit.cover,
                     image: channel != null
-                      ? NetworkImage(channel!.bannerUrl ?? '') : null,
+                      ? NetworkImage(channel!.banners!.first) : null,
                     placeholder: Container(color: Theme.of(context).scaffoldBackgroundColor),
                     errorBuilder:(context, child, exception) {
                       return Container(color: Theme.of(context).scaffoldBackgroundColor);

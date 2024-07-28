@@ -9,7 +9,7 @@ TextStyle defaultFontStyle = AppSettings.useSystemFontFamiliy
 TextStyle tabBarTextStyle(BuildContext context, {double opacity = 0.7, bool bold = true, Color? color}) {
   return defaultFontStyle.copyWith(
     fontSize: 13,
-    color: color ?? Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: color ?? Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: bold ? FontWeight.w600 : FontWeight.normal,
     letterSpacing: 0.6
   );
@@ -18,7 +18,7 @@ TextStyle tabBarTextStyle(BuildContext context, {double opacity = 0.7, bool bold
 TextStyle headerTextStyle(BuildContext context, {double opacity = 1, bool bold = true}) {
   return defaultFontStyle.copyWith(
     fontSize: 18,
-    color: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: bold ? FontWeight.w600 : FontWeight.normal
   );
 }
@@ -26,7 +26,7 @@ TextStyle headerTextStyle(BuildContext context, {double opacity = 1, bool bold =
 TextStyle bigTextStyle(BuildContext context, {double opacity = 1, bool bold = true}) {
   return defaultFontStyle.copyWith(
     fontSize: 30,
-    color: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: bold ? FontWeight.w900 : FontWeight.normal
   );
 }
@@ -34,7 +34,7 @@ TextStyle bigTextStyle(BuildContext context, {double opacity = 1, bool bold = tr
 TextStyle textStyle(BuildContext context, {double opacity = 1, bool bold = true}) {
   return defaultFontStyle.copyWith(
     fontSize: 19,
-    color: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: bold ? FontWeight.w600 : FontWeight.normal
   );
 }
@@ -42,7 +42,7 @@ TextStyle textStyle(BuildContext context, {double opacity = 1, bool bold = true}
 TextStyle subtitleTextStyle(BuildContext context, {double opacity = 1, bool bold = false}) {
   return defaultFontStyle.copyWith(
     fontSize: 15,
-    color: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: bold ? FontWeight.w600 : FontWeight.normal
   );
 }
@@ -50,7 +50,7 @@ TextStyle subtitleTextStyle(BuildContext context, {double opacity = 1, bool bold
 TextStyle smallTextStyle(BuildContext context, {double opacity = 1, bool bold = false}) {
   return defaultFontStyle.copyWith(
     fontSize: 13,
-    color: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: FontWeight.normal
   );
 }
@@ -58,7 +58,7 @@ TextStyle smallTextStyle(BuildContext context, {double opacity = 1, bool bold = 
 TextStyle tinyTextStyle(BuildContext context, {double opacity = 1, bool bold = false}) {
   return defaultFontStyle.copyWith(
     fontSize: 11,
-    color: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(opacity),
+    color: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(opacity),
     fontWeight: bold ? FontWeight.w600 : FontWeight.normal
   );
 }

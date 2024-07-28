@@ -131,6 +131,7 @@ class DownloadItem {
       if (downloadInfo.conversionTask != null) { 
         downloadStatus.add('Reencoding (Conversion)...');
         downloadFile = await FFmpegConverter.convertAudio(audioFile: downloadFile.path, task: downloadInfo.conversionTask!);
+        downloadFile = await FFmpegConverter.clearFileMetadata(downloadFile.path);
       }
       // Write all Tags to this Song
       await writeAllMetadata(downloadFile.path, downloadInfo.tags);

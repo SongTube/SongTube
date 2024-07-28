@@ -31,7 +31,7 @@ class AudioTags {
       ..dateController.text   = stream.uploadDate ?? 'Unknown'
       ..discController.text   = '1'
       ..trackController.text  = '1'
-      ..artwork               = stream.thumbnails?.hqdefault;
+      ..artwork               = stream.thumbnails?.maxresdefault;
   }
 
   // Initialize an AudioTags object with a MusicBrainzRecord

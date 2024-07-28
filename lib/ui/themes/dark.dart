@@ -14,22 +14,7 @@ ThemeData darkTheme() {
     iconTheme: const IconThemeData(
       color: Colors.white
     ),
-    textTheme: const TextTheme(
-      headline5: TextStyle(
-        color: Colors.white
-      ),
-      bodyText1: TextStyle(
-        color: Colors.white
-      ),
-      bodyText2: TextStyle(
-        color: Colors.white
-      ),
-      caption: TextStyle(
-        color: Colors.white
-      ),
-    ),
     scaffoldBackgroundColor: const Color.fromARGB(255, 35, 35, 35),
-    toggleableActiveColor: accentColor,
     cardColor: const Color(0xFF282828),
     inputDecorationTheme: InputDecorationTheme(
       labelStyle: TextStyle(
@@ -57,21 +42,6 @@ ThemeData blackTheme() {
     iconTheme: const IconThemeData(
       color: Colors.white
     ),
-    textTheme: const TextTheme(
-      headline5: TextStyle(
-        color: Colors.white
-      ),
-      bodyText1: TextStyle(
-        color: Colors.white
-      ),
-      bodyText2: TextStyle(
-        color: Colors.white
-      ),
-      caption: TextStyle(
-        color: Colors.white
-      ),
-    ),
-    toggleableActiveColor: accentColor,
     scaffoldBackgroundColor: Colors.black,
     cardColor: Colors.black,
     primaryColor: accentColor,

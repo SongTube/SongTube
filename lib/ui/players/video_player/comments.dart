@@ -107,7 +107,7 @@ class _VideoPlayerCommentsCollapsedState extends State<VideoPlayerCommentsCollap
             child: ImageFade(
               fadeDuration: const Duration(milliseconds: 300),
               placeholder: const ShimmerContainer(width: 34, height: 34),
-              image: NetworkImage(widget.comments.first.uploaderAvatarUrl!),
+              image: NetworkImage(widget.comments.first.uploaderAvatars!.first),
               fit: BoxFit.cover,
             ),
           ),
@@ -243,7 +243,7 @@ class VideoPlayerCommentsExpanded extends StatelessWidget {
               child: ImageFade(
                 fadeDuration: const Duration(milliseconds: 300),
                 placeholder: ShimmerContainer(width: 34, height: 34, color: Theme.of(context).cardColor),
-                image: NetworkImage(comment.uploaderAvatarUrl!),
+                image: NetworkImage(comment.uploaderAvatars!.first),
                 fit: BoxFit.cover,
               ),
             ),

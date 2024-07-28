@@ -175,7 +175,7 @@ class _IntroPageState extends State<IntroPage> {
                       fontSize: 16,
                       fontFamily: 'YTSans',
                       fontWeight: FontWeight.w400,
-                      color: Theme.of(context).textTheme.bodyText1!.color
+                      color: Theme.of(context).textTheme.bodyMedium!.color
                     ),
                   )
                 ],

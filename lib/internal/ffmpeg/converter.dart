@@ -3,7 +3,9 @@ import 'dart:async';
 import 'dart:io';
 
 // Packages
-import 'package:flutter_ffmpeg/flutter_ffmpeg.dart';
+import 'package:ffmpeg_kit_flutter_audio/ffmpeg_kit.dart';
+import 'package:ffmpeg_kit_flutter_audio/ffmpeg_session.dart';
+import 'package:ffmpeg_kit_flutter_audio/ffprobe_kit.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:songtube/internal/ffmpeg/filters.dart';
 import 'package:songtube/internal/media_utils.dart';
@@ -19,11 +21,6 @@ enum FFmpegTask {
   none
 }
 
-// Declare our FFmpeg instances
-FlutterFFmpeg flutterFFmpeg = FlutterFFmpeg();
-FlutterFFprobe flutterFFprobe = FlutterFFprobe();
-FlutterFFmpegConfig ffconfig = FlutterFFmpegConfig();
-
 /// FFmpeg Converter which can convert any given Audio file to another desired
 /// format or append any given Audio file to a Video
 class FFmpegConverter {
@@ -32,18 +29,19 @@ class FFmpegConverter {
   static Future<String?> getMediaDuration(String mediaFile) async {
     assert(mediaFile != "");
     if (!await File(mediaFile).exists()) return null;
-    return (await flutterFFprobe.getMediaInformation(mediaFile)).getMediaProperties()!["duration"];
+    final result = (await FFprobeKit.getMediaInformation(mediaFile));
+    final data = result.getMediaInformation()?.getDuration();
+    return data;
   }
 
   /// Gets the file Extension of any Media [File]
   static Future<String?> getMediaFormat(String mediaFile) async {
     assert(mediaFile != "");
     String? codec;
-    final streamsInfoArray = (await flutterFFprobe.getMediaInformation(mediaFile))
-      .getAllProperties();
-    if (streamsInfoArray == null) {
-      return null;
-    }
+    final streamsInfoArray = (await FFprobeKit.getMediaInformation(mediaFile))
+      .getMediaInformation()
+      ?.getAllProperties();
+    if (streamsInfoArray == null) return null;
     codec = "${streamsInfoArray['streams'][0]['codec_name']}";
     final info = "${streamsInfoArray['format']['format_name']}";
     if (codec == "aac") return "m4a";
@@ -91,8 +89,9 @@ class FFmpegConverter {
       ];
       output = File("${output.path}.webm");
     }
-    int? result = await flutterFFmpeg.executeWithArguments(argsList);
-    if (result == 1) {
+    FFmpegSession result = await FFmpegKit.executeWithArguments(argsList);
+    print(result);
+    if ((await result.getOutput()) == '1') {
       throw Exception(
         "An issue ocurred trying to append audio to video\nvideoFile: $videoPath\naudioFile: $audioPath\nformat: $videoFormat\nargument list: $argsList\noutput path: $output"
       );
@@ -168,8 +167,9 @@ class FFmpegConverter {
     if (task == FFmpegTask.none) {
       return File(audioFile);
     }
-    int? result = await flutterFFmpeg.executeWithArguments(argsList);
-    if (result == 1) {
+    FFmpegSession result = await FFmpegKit.executeWithArguments(argsList);
+    print(result);
+    if ((await result.getOutput()) == '1') {
       throw Exception(
         "An issue ocurred trying to convert audio File\naudioFile: $audioFile\nformat: $task\nargument list: $argsList\noutput path: $output"
       );
@@ -199,8 +199,9 @@ class FFmpegConverter {
       "-filter_complex", "[0:a]volume=${audioModifiers.volume+1}[volume]; [volume]bass=g=${audioModifiers.bassGain}[bass]; [bass]treble=g=${audioModifiers.trebleGain}",
        (output.path),
     ];
-    int? result = await flutterFFmpeg.executeWithArguments(argsList);
-    if (result == 1) {
+    FFmpegSession result = await FFmpegKit.executeWithArguments(argsList);
+    print(result);
+    if ((await result.getOutput()) == '1') {
       throw Exception(
         "Cannot apply AudioModifiers\naudioFile: $audioPath\naudioModifiers: v=${audioModifiers.volume} b=${audioModifiers.bassGain} t=${audioModifiers.trebleGain}\nargument list: $argsList\noutput: $output",
       );
@@ -241,8 +242,9 @@ class FFmpegConverter {
       "-i", audioFile, "-map", "0:a", "-codec:a",
       "copy", "-map_metadata", "-1", (output.path),
     ];
-    int? result = await flutterFFmpeg.executeWithArguments(argsList);
-    if (result == 1) {
+    FFmpegSession result = await FFmpegKit.executeWithArguments(argsList);
+    print(result);
+    if ((await result.getOutput()) == '1') {
       throw Exception(
         "Cannot Clear Metadata\naudioFile: $audioFile\nargument list: $argsList\noutput: $output",
       );
@@ -261,8 +263,9 @@ class FFmpegConverter {
       "-y", "-i", audioFile, "-filter_complex",
       "[0:a]dynaudnorm", (output.path)
     ];
-    int? result = await flutterFFmpeg.executeWithArguments(argsList);
-    if (result == 1) {
+    FFmpegSession result = await FFmpegKit.executeWithArguments(argsList);
+    print(result);
+    if ((await result.getOutput()) == '1') {
       throw Exception(
         "Audio Normalization Failed\n"
         "audioFile: $audioFile\n"
@@ -285,8 +288,9 @@ class FFmpegConverter {
       "-y", "-i", audioFile, "-ss", "$start", "-to",
       "$end", "-c", "copy", (output.path)
     ];
-    int? result = await flutterFFmpeg.executeWithArguments(argsList);
-    if (result == 1) {
+    FFmpegSession result = await FFmpegKit.executeWithArguments(argsList);
+    print(result);
+    if ((await result.getOutput()) == '1') {
       throw Exception(
         "Audio Extraction Failed\n"
         "audioFile: $audioFile\n"

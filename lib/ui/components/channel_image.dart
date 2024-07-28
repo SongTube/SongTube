@@ -11,6 +11,7 @@ class ChannelImage extends StatelessWidget {
     required this.channelUrl,
     required this.heroId,
     required this.channelName,
+    this.imageUrl,
     this.expand = false,
     this.highQuality = false,
     this.onTap,
@@ -18,6 +19,7 @@ class ChannelImage extends StatelessWidget {
     this.borderRadius = 100,
     super.key});
   final String? channelUrl;
+  final String? imageUrl;
   final String heroId;
   final String channelName;
   final bool expand;
@@ -27,35 +29,40 @@ class ChannelImage extends StatelessWidget {
   final Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<dynamic>(
+    Widget _image(AsyncSnapshot<dynamic>? snapshot) {
+      return Hero(
+        tag: "$channelUrl + $heroId",
+        child: GestureDetector(
+          onTap: onTap,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(borderRadius),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(borderRadius),
+              child: FadeInImage(
+                fadeInDuration: const Duration(milliseconds: 300),
+                placeholder: MemoryImage(kTransparentImage),
+                image: imageUrl != null
+                  ? NetworkImage(imageUrl!) as ImageProvider
+                  : FileImage(snapshot!.data! is File ? snapshot.data! : File(snapshot.data!)),
+                fit: BoxFit.cover,
+                imageErrorBuilder:(context, error, stackTrace) {
+                  return Image.memory(kTransparentImage);
+                },
+                height: size ?? (expand ? 80 : 50),
+                width: size ?? (expand ? 80 : 50),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+    return imageUrl != null ? _image(null) : FutureBuilder<dynamic>(
       future: highQuality ? UiUtils.getAvatarUrl(channelName, channelUrl ?? '') : ContentService.channelAvatarPictureFile(channelUrl ?? ''),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return Hero(
-            tag: "$channelUrl + $heroId",
-            child: GestureDetector(
-              onTap: onTap,
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(borderRadius),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(borderRadius),
-                  child: FadeInImage(
-                    fadeInDuration: const Duration(milliseconds: 300),
-                    placeholder: MemoryImage(kTransparentImage),
-                    image: FileImage(snapshot.data! is File ? snapshot.data! : File(snapshot.data!)),
-                    fit: BoxFit.cover,
-                    imageErrorBuilder:(context, error, stackTrace) {
-                      return Image.memory(kTransparentImage);
-                    },
-                    height: size ?? (expand ? 80 : 50),
-                    width: size ?? (expand ? 80 : 50),
-                  ),
-                ),
-              ),
-            ),
-          );
+          return _image(snapshot);
         } else {
           return ShimmerContainer(
             height: size ?? (expand ? 80 : 50),

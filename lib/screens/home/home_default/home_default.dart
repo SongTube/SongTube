@@ -230,7 +230,7 @@ class _HomeDefaultState extends State<HomeDefault> with TickerProviderStateMixin
         controller: tabController,
         isScrollable: true,
         labelColor: Provider.of<MediaProvider>(context).currentColors.vibrant,
-        unselectedLabelColor: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(0.6),
+        unselectedLabelColor: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(0.6),
         labelStyle: tabBarTextStyle(context, opacity: 1),
         unselectedLabelStyle: tabBarTextStyle(context, bold: false),
         indicatorSize: TabBarIndicatorSize.label,

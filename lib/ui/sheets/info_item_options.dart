@@ -67,7 +67,7 @@ class InfoItemOptions extends StatelessWidget {
                       } else {
                         final details = await ContentService.fetchPlaylistFromInfoItem(infoItem);
                         await details!.getStreams();
-                        contentProvider.streamPlaylistCreate(infoItem.name, infoItem.uploaderName!, details.streams!);
+                        contentProvider.streamPlaylistCreate(infoItem.name, infoItem.uploaderName!, details.streams!, thumbnail: details.thumbnails!.last);
                       }
                     }
                   );

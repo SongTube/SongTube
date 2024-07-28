@@ -56,10 +56,10 @@ class PlaylistTileCollapsed extends StatelessWidget {
                     aspectRatio: 16/9,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: playlist.thumbnailUrl != null ? ImageFade(
+                      child: playlist.thumbnails != null ? ImageFade(
                         fadeDuration: const Duration(milliseconds: 300),
                         placeholder: const ShimmerContainer(height: null, width: null),
-                        image: NetworkImage(playlist.thumbnailUrl!),
+                        image: NetworkImage(playlist.thumbnails!.last),
                         fit: BoxFit.fitWidth,
                       ) : Container(color: Theme.of(context).scaffoldBackgroundColor),
                     ),
@@ -193,16 +193,13 @@ class PlaylistTileExpanded extends StatelessWidget {
       fit: StackFit.expand,
       alignment: Alignment.bottomCenter,
       children: [
-        ImageFiltered(
-          imageFilter: ImageFilter.blur(sigmaX: 1.5, sigmaY: 1.5),
-          child: ImageFade(
-            fadeDuration: const Duration(milliseconds: 300),
-            placeholder: Container(color: Theme.of(context).cardColor.withOpacity(0.6)),
-            image: NetworkImage(playlist.thumbnailUrl ?? ''),
-            fit: BoxFit.cover,
-            errorBuilder: (context, error, stackTrace) =>
-              Container(color: Theme.of(context).cardColor),
-          ),
+        ImageFade(
+          fadeDuration: const Duration(milliseconds: 300),
+          placeholder: Container(color: Theme.of(context).cardColor.withOpacity(0.6)),
+          image: NetworkImage(playlist.thumbnails?.last ?? ''),
+          fit: BoxFit.cover,
+          errorBuilder: (context, error, stackTrace) =>
+            Container(color: Theme.of(context).cardColor),
         ),
         Align(
           alignment: Alignment.bottomCenter,

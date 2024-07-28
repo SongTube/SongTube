@@ -114,7 +114,7 @@ class _HomeDownloadsState extends State<HomeDownloads> with TickerProviderStateM
         controller: tabController,
         isScrollable: true,
         labelColor: Provider.of<MediaProvider>(context).currentColors.vibrant,
-        unselectedLabelColor: Theme.of(context).textTheme.bodyText1!.color!.withOpacity(0.4),
+        unselectedLabelColor: Theme.of(context).textTheme.bodyMedium!.color!.withOpacity(0.4),
         labelStyle: tabBarTextStyle(context, opacity: 1),
         unselectedLabelStyle: tabBarTextStyle(context, bold: false),
         indicatorSize: TabBarIndicatorSize.label,

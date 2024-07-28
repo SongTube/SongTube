@@ -306,8 +306,8 @@ class ContentProvider extends ChangeNotifier {
       return [];
     }
   }
-  void streamPlaylistCreate(String name, String author, List<StreamInfoItem> streams) {
-    final playlist =  YoutubePlaylist(null, name, null, author, null, null, null, streams.first.thumbnails!.maxresdefault, streams.length)..streams = streams;
+  void streamPlaylistCreate(String name, String author, List<StreamInfoItem> streams, {String? thumbnail}) {
+    final playlist =  YoutubePlaylist(null, name, null, author, null, null, null, thumbnail != null ? [thumbnail] : streams.first.thumbnails?.toList(), streams.length)..streams = streams;
     streamPlaylists = streamPlaylists..add(playlist);
   }
   void streamPlaylistRemove(String name) {
@@ -319,7 +319,7 @@ class ContentProvider extends ChangeNotifier {
     int index = streamPlaylists.indexWhere((element) => element.name == name);
     if (index == -1) return;
     final newPlaylist = streamPlaylists[index]..streams!.add(stream);
-    newPlaylist.thumbnailUrl ??= stream.thumbnails!.hqdefault;
+    newPlaylist.thumbnails ??= [stream.thumbnails!.hqdefault];
     streamPlaylists = streamPlaylists..[index] = newPlaylist;
   }
   void streamPlaylistRemoveStream(String name, StreamInfoItem stream) {
@@ -327,7 +327,7 @@ class ContentProvider extends ChangeNotifier {
     if (index == -1) return;
     final newPlaylist = streamPlaylists[index]..streams!.removeWhere((element) => element.id == stream.id);
     if (newPlaylist.streams!.isEmpty) {
-      newPlaylist.thumbnailUrl = null;
+      newPlaylist.thumbnails = null;
     }
     streamPlaylists = streamPlaylists..[index] = newPlaylist;
   }

@@ -142,12 +142,10 @@ class _AudioDownloadMenuState extends State<AudioDownloadMenu> with TickerProvid
                 GestureDetector(
                   onTap: () async {
                     blockPipMode = true;
-                    final image = await FilePicker.platform.pickFiles(
-                      type: FileType.image,
-                    );
+                    final image = await MediaUtils.pickImage();
                     blockPipMode = false;
-                    if (image != null && image.files.isNotEmpty) {
-                      mainTags.artwork = image.files.first.path!;
+                    if (image != null) {
+                      mainTags.artwork = image.path;
                       setState(() {});
                     }
                   },
@@ -225,7 +223,7 @@ class _AudioDownloadMenuState extends State<AudioDownloadMenu> with TickerProvid
                                         borderRadius: BorderRadius.circular(15),
                                         iconEnabledColor: mediaProvider.currentColors.vibrant,
                                         style: TextStyle(
-                                          color: Theme.of(context).textTheme.bodyText1!.color,
+                                          color: Theme.of(context).textTheme.bodyMedium!.color,
                                           fontFamily: 'Product Sans',
                                           fontWeight: FontWeight.w600,
                                           fontSize: 12
@@ -259,7 +257,7 @@ class _AudioDownloadMenuState extends State<AudioDownloadMenu> with TickerProvid
                                         iconSize: 18,
                                         iconEnabledColor: mediaProvider.currentColors.vibrant,
                                         style: TextStyle(
-                                          color: Theme.of(context).textTheme.bodyText1!.color,
+                                          color: Theme.of(context).textTheme.bodyMedium!.color,
                                           fontFamily: 'Product Sans',
                                           fontWeight: FontWeight.w600,
                                           fontSize: 12

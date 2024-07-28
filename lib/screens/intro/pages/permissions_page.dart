@@ -94,7 +94,7 @@ class _PermissionIntroPageState extends State<PermissionIntroPage> {
                   fontSize: 20,
                   color: hasPermission
                     ? Theme.of(context).primaryColor
-                    : Theme.of(context).textTheme.bodyText1!.color
+                    : Theme.of(context).textTheme.bodyMedium!.color
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -109,7 +109,7 @@ class _PermissionIntroPageState extends State<PermissionIntroPage> {
                   letterSpacing: 1,
                   color: hasPermission
                     ? Theme.of(context).primaryColor
-                    : Theme.of(context).textTheme.bodyText1!.color
+                    : Theme.of(context).textTheme.bodyMedium!.color
                 ),
                 textAlign: TextAlign.center,
               ),

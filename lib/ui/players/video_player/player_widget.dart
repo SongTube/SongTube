@@ -462,7 +462,7 @@ class VideoPlayerWidgetState extends State<VideoPlayerWidget> {
             fadeDuration: const Duration(milliseconds: 300),
             placeholder: const ShimmerContainer(height: null, width: null),
             fit: BoxFit.cover,
-            image: NetworkImage(widget.content.videoDetails?.videoInfo.thumbnailUrl ?? '')),
+            image: NetworkImage(widget.content.videoDetails?.videoInfo.thumbnails?.last ?? '')),
         ),
         if (!audioOnly)
         Center(
@@ -787,7 +787,7 @@ class VideoPlayerWidgetState extends State<VideoPlayerWidget> {
                           child: Image.network(
                             nextStream is StreamInfoItem
                               ? nextStream.thumbnails!.hqdefault
-                              : (nextStream as PlaylistInfoItem).thumbnailUrl!,
+                              : (nextStream as PlaylistInfoItem).thumbnails!.last,
                             fit: BoxFit.cover,
                           ),
                         )

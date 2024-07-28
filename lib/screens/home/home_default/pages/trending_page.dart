@@ -70,7 +70,7 @@ class TrendingPage extends StatelessWidget {
                 } else {
                   final channel = contentProvider.channelSuggestions[index-1];
                   return ChannelTile(
-                    channel: ChannelInfoItem(channel.url, channel.name, '', '', null, -1),
+                    channel: ChannelInfoItem(channel.url, channel.name, '', [], null, -1),
                     size: ChannelTileSize.small,
                     forceHighQuality: true,
                   );

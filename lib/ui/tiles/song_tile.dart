@@ -41,7 +41,7 @@ class _SongTileState extends State<SongTile> {
   // Provider
   MediaProvider get mediaProvider => Provider.of<MediaProvider>(context, listen: false);
 
-  Color get dominantColor => mediaProvider.currentColors.vibrant ?? mediaProvider.currentColors.dominant ?? Theme.of(context).textTheme.bodyText1!.color!;
+  Color get dominantColor => mediaProvider.currentColors.vibrant ?? mediaProvider.currentColors.dominant ?? Theme.of(context).textTheme.bodyMedium!.color!;
 
   @override
   Widget build(BuildContext context) {

@@ -106,7 +106,7 @@ class _VideoDownloadMenuState extends State<VideoDownloadMenu> {
                               child: ImageFade(
                                 fadeDuration: const Duration(milliseconds: 300),
                                 placeholder: Container(color: Theme.of(context).cardColor),
-                                image: NetworkImage(widget.video.videoInfo.thumbnailUrl!),
+                                image: NetworkImage(widget.video.videoInfo.thumbnails!.last),
                                 fit: BoxFit.cover,
                               ),
                             ),

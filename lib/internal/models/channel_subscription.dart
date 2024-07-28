@@ -7,7 +7,7 @@ class ChannelSubscription {
   String url;
   String id;
   String name;
-  String avatarUrl;
+  List<String> avatars;
   DateTime date;
   bool enableNotifications;
 
@@ -15,7 +15,7 @@ class ChannelSubscription {
     this.url,
     this.id,
     this.name,
-    this.avatarUrl,
+    this.avatars,
     this.date,
     this.enableNotifications
   );
@@ -25,18 +25,18 @@ class ChannelSubscription {
       channel.url ?? '',
       channel.id ?? '',
       channel.name ?? 'Unknown',
-      channel.avatarUrl ?? '',
+      channel.avatars ?? [],
       DateTime.now(),
       false
     );
   }
 
-  Map<String, String> toMap() {
+  Map<String, dynamic> toMap() {
     return {
       'url': url,
       'id': id,
       'name': name,
-      'avatarUrl': avatarUrl,
+      'avatars': avatars,
       'date': date.toString(),
       'enableNotifications': enableNotifications.toString()
     };
@@ -47,7 +47,7 @@ class ChannelSubscription {
       map['url'],
       map['id'],
       map['name'],
-      map['avatarUrl'],
+      List<String>.from(map['avatars']),
       DateTime.parse(map['date']),
       map['enableNotifications'] == "true" ? true : false
     );

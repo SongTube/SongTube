@@ -45,7 +45,7 @@ class _ExpandedPlayerBodyState extends State<ExpandedPlayerBody> {
   // Player Colors
   Color textColor(MediaProvider provider) {
     final palette = provider.currentColors;
-    final defaultColor = Theme.of(context).textTheme.bodyText1!.color!;
+    final defaultColor = Theme.of(context).textTheme.bodyMedium!.color!;
     if (AppSettings().enableMusicPlayerBlur) {
       if ((palette.dominant ?? Colors.black).computeLuminance() < 0.2) {
         return palette.text;
@@ -59,7 +59,7 @@ class _ExpandedPlayerBodyState extends State<ExpandedPlayerBody> {
   
   Color dominantColor(MediaProvider provider) {
     final palette = provider.currentColors;
-    final defaultColor = Theme.of(context).textTheme.bodyText1!.color!;
+    final defaultColor = Theme.of(context).textTheme.bodyMedium!.color!;
     if (AppSettings().enableMusicPlayerBlur) {
       if ((palette.dominant ?? Colors.black).computeLuminance() < 0.2) {
         return palette.text;

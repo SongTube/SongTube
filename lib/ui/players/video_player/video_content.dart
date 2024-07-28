@@ -257,7 +257,7 @@ class _VideoPlayerContentState extends State<VideoPlayerContent> with TickerProv
                                   child: ImageFade(
                                     fadeDuration: const Duration(milliseconds: 300),
                                     placeholder: ShimmerContainer(height: 40, width: 40, borderRadius: BorderRadius.circular(100)),
-                                    image: NetworkImage(videoInfo.uploaderAvatarUrl!),
+                                    image: NetworkImage(videoInfo.uploaderAvatars!.first),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -293,7 +293,7 @@ class _VideoPlayerContentState extends State<VideoPlayerContent> with TickerProv
                               const SizedBox(width: 12),
                               if (videoInfo != null)
                               ChannelSubscribeText(channelName: videoInfo.uploaderName??'', channel: ChannelInfoItem(
-                                videoInfo.uploaderUrl??'', videoInfo.uploaderName??'', '', '', null, -1
+                                videoInfo.uploaderUrl??'', videoInfo.uploaderName??'', '', [], null, -1
                               )),
                               const SizedBox(width: 4),
                             ],
