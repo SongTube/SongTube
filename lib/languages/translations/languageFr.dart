@@ -4,37 +4,37 @@ class LanguageFr extends Languages {
 
   // Introduction Screens
   @override
-  String get labelAppWelcome => "Bienvenue dans";
+  String get labelAppWelcome => "Bienvenue !";
   @override
-  String get labelStart => "Commencer";
+  String get labelStart => "Commençons";
   @override
   String get labelSkip => "Passer";
   @override
   String get labelNext => "Suivant";
   @override
   String get labelExternalAccessJustification =>
-    "A besoin d'accéder à votre stockage externe pour sauvegarder toutes les données. " +
-    "vos vidéos et musiques";
+    "Nécessite l'accès à votre stockage externe pour tout sauvegarder " +
+    "vos vidéos et votre musique";
   @override
   String get labelAppCustomization => "Personnalisation";
   @override
-  String get labelSelectPreferred => "Sélectionnez vos préférences";
+  String get labelSelectPreferred => "Sélectionnez votre préféré";
   @override
-  String get labelConfigReady => "Prêt à configurer";
+  String get labelConfigReady => "Configuration prête";
   @override
   String get labelIntroductionIsOver => "L'introduction est terminée";
   @override
-  String get labelEnjoy => "Profitez";
+  String get labelEnjoy => "Apprécier";
   @override 
-  String get labelGoHome => "Go Home";
+  String get labelGoHome => "Aller à l'accueil";
 
   // Bottom Navigation Bar
   @override
-  String get labelHome => "Home";
+  String get labelHome => "Accueil";
   @override
   String get labelDownloads => "Téléchargements";
   @override
-  String get labelMedia => "Média";
+  String get labelMedia => "Médias";
   @override
   String get labelYouTube => "YouTube";
   @override
@@ -44,19 +44,19 @@ class LanguageFr extends Languages {
   @override
   String get labelQuickSearch => "Recherche rapide...";
   @override
-  String get labelTagsEditor => "Tags\nEditeur";
+  String get labelTagsEditor => "Éditeur de Balises";
   @override
-  String get labelEditArtwork => "Modifier\nArtwork";
+  String get labelEditArtwork => "Modifier\nŒuvre d'art";
   @override
-  String get labelDownloadAll => "Télécharger tout";
+  String get labelDownloadAll => "Télécharger Tout";
   @override 
-  String get labelLoadingVideos => "Chargement vidéo...";
+  String get labelLoadingVideos => "Chargement des vidéos...";
   @override
-  String get labelHomePage => "Home Page";
+  String get labelHomePage => "Page d'accueil";
   @override
   String get labelTrending => "Tendance";
   @override
-  String get labelFavorites => "Favorits";
+  String get labelFavorites => "Favoris";
   @override
   String get labelWatchLater => "Regarder plus tard";
 
@@ -64,19 +64,19 @@ class LanguageFr extends Languages {
   @override
   String get labelCopyLink => "Copier le lien";
   @override
-  String get labelAddToFavorites => "Ajouter aux favorits";
+  String get labelAddToFavorites => "Ajouter aux favoris";
   @override
-  String get labelAddToWatchLater => "Ajouter à regarder plus tard";
+  String get labelAddToWatchLater => "Ajouter pour regarder plus tard";
   @override
-  String get labelAddToPlaylist => "Ajouter à une Playlist";
+  String get labelAddToPlaylist => "Ajouter à la playlist";
 
   // Downloads Screen
   @override
-  String get labelQueued => "File d'attente";
+  String get labelQueued => "En file d'attente";
   @override
   String get labelDownloading => "Téléchargement";
   @override
-  String get labelConverting => "Convertion";
+  String get labelConverting => "Conversion";
   @override
   String get labelCancelled => "Annulé";
   @override
@@ -84,41 +84,41 @@ class LanguageFr extends Languages {
 
   // Download Status/Error Messages
   @override
-  String get labelDownloadQueued => "Télécharger la file d'attente";
+  String get labelDownloadQueued => "Téléchargement en file d'attente";
   @override
   String get labelDownloadAcesssDenied => "Accès refusé";
   @override
-  String get labelClearingExistingMetadata => "Nettoyer les métadonnées existantes...";
+  String get labelClearingExistingMetadata => "Effacement des métadonnées existantes...";
   @override
-  String get labelWrittingTagsAndArtwork => "Écrire les étiquettes & Artwork...";
+  String get labelWrittingTagsAndArtwork => "Balises d'écriture et illustrations...";
   @override
   String get labelSavingFile => "Sauvegarde du fichier...";
   @override
-  String get labelAndroid11FixNeeded => "Erreur, Android 11 Correction nécessaire, vérifier les paramètres";
+  String get labelAndroid11FixNeeded => "Erreur : correctif Android 11 nécessaire. Vérifiez les paramètres.";
   @override
-  String get labelErrorSavingDownload => "Impossible d'enregistrer votre téléchargement, vérifiez les autorisations.";
+  String get labelErrorSavingDownload => "Impossible d'enregistrer votre téléchargement. Vérifiez les autorisations.";
   @override
   String get labelDownloadingVideo => "Téléchargement de la vidéo...";
   @override
-  String get labelDownloadingAudio => "Téléchargement de l'audio...";
+  String get labelDownloadingAudio => "Téléchargement audio...";
   @override
-  String get labelGettingAudioStream => "Obtention du flux audio...";
+  String get labelGettingAudioStream => "Obtenir un flux audio...";
   @override
-  String get labelAudioNoDataRecieved => "Impossible d'obtenir un flux audio";
+  String get labelAudioNoDataRecieved => "Impossible d'obtenir le flux audio";
   @override
   String get labelDownloadStarting => "Démarrage du téléchargement...";
   @override
-  String get labelDownloadCancelled => "Télécharger annulé";
+  String get labelDownloadCancelled => "Téléchargement annulé";
   @override
   String get labelAnIssueOcurredConvertingAudio => "Échec du processus de conversion";
   @override
-  String get labelPatchingAudio => "Raccordement de l'audio...";
+  String get labelPatchingAudio => "Correction audio...";
 
   // Download Menu
   @override
   String get labelEnableAudioConversion => "Activer la conversion audio";
   @override
-  String get labelGainControls => "Contrôles du gain";
+  String get labelGainControls => "Contrôles de gain";
   @override
   String get labelVolume => "Volume";
   @override
@@ -126,19 +126,19 @@ class LanguageFr extends Languages {
   @override
   String get labelTrebleGain => "Gain des aigus";
   @override
-  String get labelSelectVideo => "Sélectionnez la vidéo";
+  String get labelSelectVideo => "Sélectionner une vidéo";
   @override
-  String get labelSelectAudio => "Sélectionnez Audio";
+  String get labelSelectAudio => "Sélectionner l'audio";
   @override
-  String get labelGlobalParameters => "Paramètres généraux";
+  String get labelGlobalParameters => "Paramètres globaux";
 
   // Media Screen
   @override
-  String get labelMusic => "Musiques";
+  String get labelMusic => "Musique";
   @override
   String get labelVideos => "Vidéos";
   @override
-  String get labelNoMediaYet => "Aucun média pour le moment";
+  String get labelNoMediaYet => "Pas encore de média";
   @override
   String get labelNoMediaYetJustification => "Tous vos médias " +
     "seront montrés ici";
@@ -147,16 +147,16 @@ class LanguageFr extends Languages {
   @override
   String get labelDeleteSong => "Supprimer la chanson";
   @override
-  String get labelNoPermissionJustification => "Visualisez vos médias par" + "\n" +
-    "Accorder l'autorisation d'accès au stockage";
+  String get labelNoPermissionJustification => "Consultez vos médias par" + "\n" +
+    "Octroi d'une autorisation de stockage";
   @override
-  String get labelGettingYourMedia => "Obtenir votre média...";
+  String get labelGettingYourMedia => "Obtenir vos médias...";
   @override
-  String get labelEditTags => "Modifier les étiquettes";
+  String get labelEditTags => "Modifier les balises";
 
   // Navigate Screen
   @override
-  String get labelSearchYoutube => "Recherche YouTube...";
+  String get labelSearchYoutube => "Rechercher sur YouTube...";
 
   // More Screen
   @override
@@ -170,10 +170,10 @@ class LanguageFr extends Languages {
   @override
   String get labelTheme => "Thème";
   @override
-  String get labelUseSystemTheme => "Utiliser le thème du système";
+  String get labelUseSystemTheme => "Utiliser le thème système";
   @override
   String get labelUseSystemThemeJustification =>
-    "Activer/Désactiver le thème automatique";
+    "Activer / Désactiver le thème automatique";
   @override
   String get labelEnableDarkTheme => "Activer le thème sombre";
   @override
@@ -183,66 +183,66 @@ class LanguageFr extends Languages {
   String get labelEnableBlackTheme => "Activer le thème noir";
   @override
   String get labelEnableBlackThemeJustification =>
-    "Activez le thème Noir pur";
+    "Utiliser le thème noir";
   @override
-  String get labelAccentColor => "Couleur principale";
+  String get labelAccentColor => "Couleur d'accentuation";
   @override
-  String get labelAccentColorJustification => "Personnaliser la couleur principale";
+  String get labelAccentColorJustification => "Personnaliser la couleur d'accentuation";
   @override
   String get labelAudioFolder => "Dossier audio";
   @override
   String get labelAudioFolderJustification => "Choisissez un dossier pour " +
-    "Téléchargements audio";
+    "les téléchargements audio";
   @override
   String get labelVideoFolder => "Dossier vidéo";
   @override
   String get labelVideoFolderJustification => "Choisissez un dossier pour " +
-    "Téléchargements de vidéos";
+    "les téléchargements de vidéos";
   @override
-  String get labelAlbumFolder => "Dossier d'album";
+  String get labelAlbumFolder => "Album Folder";
   @override
-  String get labelAlbumFolderJustification => "Créer un dossier pour chaque album de chansons";
+  String get labelAlbumFolderJustification => "Create a Folder for each Song Album";
   @override
-  String get labelDeleteCache => "Supprimer le cache";
+  String get labelDeleteCache => "Delete Cache";
   @override
-  String get labelDeleteCacheJustification => "Vider le cache de SongTube";
+  String get labelDeleteCacheJustification => "Clear SongTube Cache";
   @override
-  String get labelAndroid11Fix => "Correction d'Android 11";
+  String get labelAndroid11Fix => "Android 11 Fix";
   @override
-  String get labelAndroid11FixJustification => "Correction des problèmes de téléchargement sur " +
+  String get labelAndroid11FixJustification => "Fixes Download issues on " +
     "Android 10 & 11";
   @override
-  String get labelBackup => "Sauvegarde";
+  String get labelBackup => "Backup";
   @override
-  String get labelBackupJustification => "Sauvegarde de votre médiathèque";
+  String get labelBackupJustification => "Backup your media library";
   @override
-  String get labelRestore => "Restaurer";
+  String get labelRestore => "Restore";
   @override
-  String get labelRestoreJustification => "Restaurer votre médiathèque";
+  String get labelRestoreJustification => "Restore your media library";
   @override
-  String get labelBackupLibraryEmpty => "Votre médiathèque est vide";
+  String get labelBackupLibraryEmpty => "Your Library is empty";
   @override
-  String get labelBackupCompleted => "Sauvegarde terminée";
+  String get labelBackupCompleted => "Backup Completed";
   @override
-  String get labelRestoreNotFound => "Restauration non trouvée";
+  String get labelRestoreNotFound => "Restore Not Found";
   @override
-  String get labelRestoreCompleted => "Restauration terminée";
+  String get labelRestoreCompleted => "Restore Completed";
   @override
-  String get labelCacheIsEmpty => "Le cache est vide";
+  String get labelCacheIsEmpty => "Cache is Empty";
   @override
-  String get labelYouAreAboutToClear => "Vous êtes sur le point d'effacer";
+  String get labelYouAreAboutToClear => "You're about to clear";
 
   // Tags Editor TextFields
   @override
-  String get labelEditorTitle => "Titre";
+  String get labelEditorTitle => "Title";
   @override
-  String get labelEditorArtist => "Artiste";
+  String get labelEditorArtist => "Artist";
   @override
   String get labelEditorGenre => "Genre";
   @override
-  String get labelEditorDisc => "Disque";
+  String get labelEditorDisc => "Disc";
   @override
-  String get labelEditorTrack => "Piste";
+  String get labelEditorTrack => "Track";
   @override
   String get labelEditorDate => "Date";
   @override
@@ -250,118 +250,118 @@ class LanguageFr extends Languages {
 
   // Android 10 or 11 Detected Dialog
   @override
-  String get labelAndroid11Detected => "Android 10 ou 11 détecté";
+  String get labelAndroid11Detected => "Android 10 or 11 Detected";
   @override
-  String get labelAndroid11DetectedJustification => "Pour garantir la bonne " +
-    "fonctionnement des téléchargements de cette app, sur Android 10 et 11, l'accès à tous les " +
-    "L'autorisation du stockage peut être nécessaire, mais elle sera temporelle et non requise. " +
-    "sur les futures mises à jour. Vous pouvez également appliquer cette correction dans les paramètres.";
+  String get labelAndroid11DetectedJustification => "To ensure the correct " +
+    "functioning of this app Downloads, on Android 10 and 11, access to all " +
+    "Files permission might be needed, this will be temporal and not required " +
+    "on future updates. You can also apply this fix in Settings.";
 
   // Music Player
   @override
-  String get labelPlayerSettings => "Paramètres du lecteur";
+  String get labelPlayerSettings => "Player Settings";
   @override
-  String get labelExpandArtwork => "Élargir l'Artwork";
+  String get labelExpandArtwork => "Expand Artwork";
   @override
-  String get labelArtworkRoundedCorners => "Artwork angles arrondis";
+  String get labelArtworkRoundedCorners => "Artwork Rounded Corners";
   @override
-  String get labelPlayingFrom => "Jouer à partir de";
+  String get labelPlayingFrom => "Playing From";
   @override
-  String get labelBlurBackground => "Flou de l'arrière-plan";
+  String get labelBlurBackground => "Blur Background";
 
   // Video Page
   @override
-  String get labelTags => "Étiquettes";
+  String get labelTags => "Tags";
   @override
-  String get labelRelated => "Voir aussi";
+  String get labelRelated => "Related";
   @override
-  String get labelAutoPlay => "Lecture automatique";
+  String get labelAutoPlay => "AutoPlay";
 
   // Tags Pages
   @override
   String get labelAudioFormatNotCompatible =>
-    "Format audio non compatible";
+    "Audio format not Compatible";
   @override
-  String get labelNotSpecified => "Non précisée";
+  String get labelNotSpecified => "Not Specified";
   @override
   String get labelPerformAutomaticTagging => 
-    "Effectuer un étiquetage automatique";
+    "Perform Automatic Tagging";
   @override
   String get labelSelectTagsfromMusicBrainz => 
-    "Sélectionner les tags de MusicBrainz";
+    "Select Tags from MusicBrainz";
   @override
   String get labelSelectArtworkFromDevice =>
-    "SSélectionner l'Artwork depuis l'appareil";
+    "Select Artwork from Device";
 
   // Telegram Join Channel Dialog
   @override
-  String get labelJoinTelegramChannel => "Rejoindre le canal Telegram!";
+  String get labelJoinTelegramChannel => "Join Telegram Channel!";
   @override
   String get labelJoinTelegramJustification =>
-    "Vous aimez SongTube ? Rejoignez la chaîne Telegram ! Vous y trouverez " +
-    "Mises à jour, informations, développement, lien de groupe et autres liens sociaux." +
+    "Do you like SongTube? Please join the Telegram Channel! You will find " +
+    "Updates, Information, Development, Group Link and other Social links." +
     "\n\n" +
-    "Au cas où vous auriez une question ou une recommandation à formuler, " +
-    "s'il vous plaît, rejoignez le groupe depuis le canal et notez-le ! Mais gardez à l'esprit " +
-    "vous ne pouvez parler qu'en anglais, merci !";
+    "In case you have an issue or a great recommentation in your mind, " +
+    "please join the Group from the Channel and write it down! But take in mind " +
+    "you can only speak in English, thanks!";
   @override
-  String get labelRemindLater => "Rappeler plus tard";
+  String get labelRemindLater => "Remind Later";
 
   // Common Words (One word labels)
   @override
-  String get labelExit => "Sortie";
+  String get labelExit => "Exit";
   @override
-  String get labelSystem => "Système";
+  String get labelSystem => "System";
   @override
-  String get labelChannel => "Chaîne";
+  String get labelChannel => "Channel";
   @override
-  String get labelShare => "Partager";
+  String get labelShare => "Share";
   @override
   String get labelAudio => "Audio";
   @override
-  String get labelVideo => "Vidéo";
+  String get labelVideo => "Video";
   @override
-  String get labelDownload => "Téléchargement";
+  String get labelDownload => "Download";
   @override
-  String get labelBest => "Meilleur";
+  String get labelBest => "Best";
   @override
   String get labelPlaylist => "Playlist";
   @override
   String get labelVersion => "Version";
   @override
-  String get labelLanguage => "Langue";
+  String get labelLanguage => "Language";
   @override
-  String get labelGrant => "Accord";
+  String get labelGrant => "Grant";
   @override
-  String get labelAllow => "Autoriser";
+  String get labelAllow => "Allow";
   @override
-  String get labelAccess => "Accès";
+  String get labelAccess => "Access";
   @override
-  String get labelEmpty => "Vide";
+  String get labelEmpty => "Empty";
   @override
-  String get labelCalculating => "Calcul en cours";
+  String get labelCalculating => "Calculating";
   @override
-  String get labelCleaning => "Nettoyage";
+  String get labelCleaning => "Cleaning";
   @override
-  String get labelCancel => "Annulé";
+  String get labelCancel => "Cancel";
   @override
-  String get labelGeneral => "Général";
+  String get labelGeneral => "General";
   @override
-  String get labelRemove => "Supprimer";
+  String get labelRemove => "Remove";
   @override
-  String get labelJoin => "Rejoindre";
+  String get labelJoin => "Join";
   @override
-  String get labelNo => "Non";
+  String get labelNo => "No";
   @override
-  String get labelLibrary => "Médiathèque";
+  String get labelLibrary => "Library";
   @override
-  String get labelCreate => "Créer";
+  String get labelCreate => "Create";
   @override
   String get labelPlaylists => "Playlists";
   @override
-  String get labelQuality => "Qualité";
+  String get labelQuality => "Quality";
   @override
-  String get labelSubscribe => "S'abonner";
+  String get labelSubscribe => "Subscribe";
 
   // Other Translations
   @override
