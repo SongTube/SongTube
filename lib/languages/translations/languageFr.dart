@@ -56,7 +56,7 @@ class LanguageFr extends Languages {
   @override
   String get labelTrending => "Tendance";
   @override
-  String get labelFavorites => "Favorits";
+  String get labelFavorites => "Favoris";
   @override
   String get labelWatchLater => "Regarder plus tard";
 
