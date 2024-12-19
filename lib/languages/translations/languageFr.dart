@@ -399,325 +399,325 @@ class LanguageFr extends Languages {
   @override
   String get labelWatchHistory => 'Regarder l'historique';
   @override
-  String get labelWatchHistoryDescription => 'Look at which videos you have seen';
+  String get labelWatchHistoryDescription => 'Regardez les vidéos que vous avez vues';
   @override
-  String get labelBackupAndRestore => 'Backup & Restore';
+  String get labelBackupAndRestore => 'Sauvegarde & Restauration';
   @override
-  String get labelBackupAndRestoreDescription => 'Save or resture all of your local data';
+  String get labelBackupAndRestoreDescription => 'Sauvegardez ou restaurez toutes vos données locales';
   @override
-  String get labelSongtubeLink => 'SongTube Link';
+  String get labelSongtubeLink => 'Lien SongTube';
   @override
-  String get labelSongtubeLinkDescription => 'Allow SongTube browser extension to detect this device, long press to learn more';
+  String get labelSongtubeLinkDescription => 'Autoriser l'extension de navigateur SongTube à détecter cet appareil, appuyez longuement pour en savoir plus';
   @override
-  String get labelSupportDevelopment => 'Support Development';
+  String get labelSupportDevelopment => 'Soutenir le développement';
   @override
-  String get labelSocialLinks => 'Social Links';
+  String get labelSocialLinks => 'Liens sociaux';
   @override
-  String get labelSeeMore => 'See more';
+  String get labelSeeMore => 'Voir plus';
   @override
-  String get labelMostPlayed => 'Most played';
+  String get labelMostPlayed => 'Le plus joué';
   @override
-  String get labelNoPlaylistsYet => 'No Playlists Yet';
+  String get labelNoPlaylistsYet => 'Aucune playlist pour le moment';
   @override
-  String get labelNoPlaylistsYetDescription => 'You can create a playlist from your recents, music, albums or artists';
+  String get labelNoPlaylistsYetDescription => 'Vous pouvez créer une playlist à partir de votre musique, albums ou artistes récents';
   @override
-  String get labelNoSearchResults => 'No search results';
+  String get labelNoSearchResults => 'Aucun résultat de recherche';
   @override
-  String get labelSongResults => 'Song results';
+  String get labelSongResults => 'Résultats des chansons';
   @override
-  String get labelAlbumResults => 'Album results';
+  String get labelAlbumResults => 'Résultats de l'album';
   @override
-  String get labelArtistResults => 'Artist results';
+  String get labelArtistResults => 'Résultats de l'artiste';
   @override
-  String get labelSearchAnything => 'Search anything';
+  String get labelSearchAnything => 'Rechercher n'importe quoi';
   @override
-  String get labelRecents => 'Recents';
+  String get labelRecents => 'Récents';
   @override
-  String get labelFetchingSongs => 'Fetching Songs';
+  String get labelFetchingSongs => 'Récupérer des chansons';
   @override
-  String get labelPleaseWaitAMoment => 'Please wait a moment';
+  String get labelPleaseWaitAMoment => 'Veuillez patienter un instant';
   @override
-  String get labelWeAreDone => 'We are done';
+  String get labelWeAreDone => 'Nous avons terminé';
   @override
-  String get labelEnjoyTheApp => 'Enjoy the\nApp';
+  String get labelEnjoyTheApp => 'Profitez de l'application !';
   @override
-  String get labelSongtubeIsBackDescription => 'SongTube is back with a cleaner look and set of features, have fun with your music!';
+  String get labelSongtubeIsBackDescription => 'SongTube est de retour avec un look plus épuré et un ensemble de fonctionnalités, amusez-vous avec votre musique !';
   @override
-  String get labelLetsGo => 'Let\'s go';
+  String get labelLetsGo => 'Allons-y !';
   @override
-  String get labelPleaseWait => 'Please wait';
+  String get labelPleaseWait => 'Veuillez patienter';
   @override
-  String get labelPoweredBy => 'Powered by';
+  String get labelPoweredBy => 'Alimenté par';
   @override
-  String get labelGetStarted => 'Get Started';
+  String get labelGetStarted => 'Commençons';
   @override
-  String get labelAllowUsToHave => 'Allow us to have';
+  String get labelAllowUsToHave => 'Permettez-nous d'avoir';
   @override
-  String get labelStorageRead => 'Storage\nRead';
+  String get labelStorageRead => 'Stockage\nLecture';
   @override
-  String get labelStorageReadDescription => 'This will scan your music, extract high quality artworks and allow you to personalize your music';
+  String get labelStorageReadDescription => 'Cela analysera votre musique, extraira des illustrations de haute qualité et vous permettra de personnaliser votre musique';
   @override
-  String get labelContinue => 'Continue';
+  String get labelContinue => 'Continuer';
   @override
-  String get labelAllowStorageRead => 'Allow Storage Read';
+  String get labelAllowStorageRead => 'Autoriser la lecture du stockage';
   @override
-  String get labelSelectYourPreferred => 'Select your preferred';
+  String get labelSelectYourPreferred => 'Sélectionnez votre préféré';
   @override
-  String get labelLight => 'Light';
+  String get labelLight => 'Clair';
   @override
-  String get labelDark => 'Dark';
+  String get labelDark => 'Sombre';
   @override
-  String get labelSimultaneousDownloads => 'Simultaneous Downloads';
+  String get labelSimultaneousDownloads => 'Téléchargements simultanés';
   @override
-  String get labelSimultaneousDownloadsDescription => 'Define how many downloads can happen at the same time';
+  String get labelSimultaneousDownloadsDescription => 'Définir le nombre de téléchargements pouvant avoir lieu en même temps';
   @override
-  String get labelItems => 'Items';
+  String get labelItems => 'Articles';
   @override
-  String get labelInstantDownloadFormat => 'Instant Download';
+  String get labelInstantDownloadFormat => 'Téléchargement instantané';
   @override
-  String get labelInstantDownloadFormatDescription => 'Change the audio format for instant downloads';
+  String get labelInstantDownloadFormatDescription => 'Changer le format audio pour les téléchargements instantanés';
   @override
-  String get labelCurrent => 'Current';
+  String get labelCurrent => 'Actuel';
   @override
-  String get labelPauseWatchHistory => 'Pause Watch History';
+  String get labelPauseWatchHistory => 'Mettre en pause l'historique de visionnage';
   @override
-  String get labelPauseWatchHistoryDescription => 'While paused, videos are not saved into the watch history list';
+  String get labelPauseWatchHistoryDescription => 'En pause, les vidéos ne sont pas enregistrées dans la liste de l'historique de visionnage';
   @override
-  String get labelLockNavigationBar => 'Lock Navigation Bar';
+  String get labelLockNavigationBar => 'Verrouiller la barre de navigation';
   @override
-  String get labelLockNavigationBarDescription => 'Locks the navigation bar from hiding and showing automatically on scroll';
+  String get labelLockNavigationBarDescription => 'Verrouillez la barre de navigation pour qu'elle ne se cache pas et ne s'affiche pas automatiquement lors du défilement';
   @override
   String get labelPictureInPicture => 'Picture in Picture';
   @override
-  String get labelPictureInPictureDescription => 'Automatically enters PiP mode upon tapping home button while watching a video';
+  String get labelPictureInPictureDescription => 'Passez automatiquement en mode PiP en appuyant sur le bouton d'accueil tout en regardant une vidéo';
   @override
-  String get labelBackgroundPlaybackAlpha => 'Background Playback (Alpha)';
+  String get labelBackgroundPlaybackAlpha => 'Lecture en arrière-plan (Alpha)';
   @override
-  String get labelBackgroundPlaybackAlphaDescription => 'Toggle background playback feature. Due to plugin limitations, only current video can be played in the background';
+  String get labelBackgroundPlaybackAlphaDescription => 'Activer / Désactiver la fonction de lecture en arrière-plan. En raison des limitations du plug-in, seule la vidéo actuelle peut être lue en arrière-plan.';
   @override
-  String get labelBlurBackgroundDescription => 'Add blurred artwork background';
+  String get labelBlurBackgroundDescription => 'Ajouter un arrière-plan flou à l'illustration';
   @override
-  String get labelBlurIntensity => 'Blur Intensity';
+  String get labelBlurIntensity => 'Intensité du flou';
   @override
-  String get labelBlurIntensityDescription => 'Change the blur intensity of the artwork background';
+  String get labelBlurIntensityDescription => 'Modifier l'intensité du flou de l'arrière-plan de l'illustration';
   @override
-  String get labelBackdropOpacity => 'Backdrop Opacity';
+  String get labelBackdropOpacity => 'Opacité de l'arrière-plan';
   @override
-  String get labelBackdropOpacityDescription => 'Change the colored backdrop opacity';
+  String get labelBackdropOpacityDescription => 'Modifier l'opacité de l'arrière-plan coloré';
   @override
-  String get labelArtworkShadowOpacity => 'Artwork Shadow Opacity';
+  String get labelArtworkShadowOpacity => 'Opacité de l'ombre de l'illustration';
   @override
-  String get labelArtworkShadowOpacityDescription => 'Change the artwork shadow intensity of the music player';
+  String get labelArtworkShadowOpacityDescription => 'Modifier l'intensité de l'ombre de l'illustration du lecteur de musique';
   @override
-  String get labelArtworkShadowRadius => 'Artwork Shadow Radius';
+  String get labelArtworkShadowRadius => 'Rayon d'ombre de l'illustration';
   @override
-  String get labelArtworkShadowRadiusDescription => 'Change the artwork shadow radius of the music player';
+  String get labelArtworkShadowRadiusDescription => 'Modifier le rayon d'ombre de l'illustration du lecteur de musique';
   @override
-  String get labelArtworkScaling => 'Artwork Scaling';
+  String get labelArtworkScaling => 'Mise à l'échelle des illustrations';
   @override
-  String get labelArtworkScalingDescription => 'Scale out the music player artwork & background images';
+  String get labelArtworkScalingDescription => 'Agrandir l'illustration du lecteur de musique et les images d'arrière-plan';
   @override
-  String get labelBackgroundParallax => 'Background Parallax';
+  String get labelBackgroundParallax => 'Parallaxe d'arrière-plan';
   @override
-  String get labelBackgroundParallaxDescription =>  'Enable/Disable background image parallax effect';
+  String get labelBackgroundParallaxDescription =>  'Activer / Désactiver l'effet de parallaxe de l'image d'arrière-plan';
   @override
-  String get labelRestoreThumbnails => 'Restore Thumbnails';
+  String get labelRestoreThumbnails => 'Restaurer les miniatures';
   @override
-  String get labelRestoreThumbnailsDescription => 'Force thumbnails and artwork generation process';
+  String get labelRestoreThumbnailsDescription => 'Forcer le processus de génération de vignettes et d'illustrations';
   @override
-  String get labelRestoringArtworks => 'Restoring artworks';
+  String get labelRestoringArtworks => 'Restauration d'illustrations';
   @override
-  String get labelRestoringArtworksDone => 'Restoring artworks done';
+  String get labelRestoringArtworksDone => 'Restauration d'illustrations effectuées';
   @override
-  String get labelHomeScreen => 'Home Screen';
+  String get labelHomeScreen => 'Écran d'accueil';
   @override
-  String get labelHomeScreenDescription => 'Change the default landing screen when you open the app';
+  String get labelHomeScreenDescription => 'Modifier l'écran d'accueil par défaut lorsque vous ouvrez l'application';
   @override
-  String get labelDefaultMusicPage => 'Default Music Page';
+  String get labelDefaultMusicPage => 'Page de musique par défaut';
   @override
-  String get labelDefaultMusicPageDescription => 'Change the default page for the Music Page';
+  String get labelDefaultMusicPageDescription => 'Modifier la page par défaut de la page Musique';
   @override
-  String get labelAbout => 'About';
+  String get labelAbout => 'À propos';
   @override
-  String get labelConversionRequired => 'Conversion Required';
+  String get labelConversionRequired => 'Conversion requise';
   @override
-  String get labelConversionRequiredDescription =>  'This song format is incompatible with the ID3 Tags editor. The app will automatically convert this song to AAC (m4a) to sort out this issue.';
+  String get labelConversionRequiredDescription =>  'Ce format de chanson est incompatible avec l'éditeur de balises ID3. L'application convertira automatiquement cette chanson en AAC (m4a) pour résoudre ce problème.';
   @override
-  String get labelPermissionRequired => 'Permission Required';
+  String get labelPermissionRequired => 'Autorisation requise';
   @override
-  String get labelPermissionRequiredDescription => 'All file access permission is required for SongTube to edit any song on your device';
+  String get labelPermissionRequiredDescription => 'Toutes les autorisations d'accès aux fichiers sont requises pour que SongTube puisse modifier n'importe quelle chanson sur votre appareil.';
   @override
-  String get labelApplying => 'Applying';
+  String get labelApplying => 'Application';
   @override
-  String get labelConvertingDescription => 'Re-encoding this song into AAC (m4a) format';
+  String get labelConvertingDescription => 'Réencodage de cette chanson au format AAC (m4a)';
   @override
-  String get labelWrittingTagsAndArtworkDescription => 'Applying new tags to this song';
+  String get labelWrittingTagsAndArtworkDescription => 'Appliquer de nouvelles balises à cette chanson';
   @override
-  String get labelApply => 'Apply';
+  String get labelApply => 'Appliquer';
   @override
-  String get labelSongs => 'Songs';
+  String get labelSongs => 'Chansons';
   @override
-  String get labelPlayAll => 'Play All';
+  String get labelPlayAll => 'Tout lire';
   @override
-  String get labelPlaying => 'Playing';
+  String get labelPlaying => 'Lecture en cours';
   @override
   String get labelPages => 'Pages';
   @override
-  String get labelMusicPlayer => 'Music Player';
+  String get labelMusicPlayer => 'Lecteur de musique';
   @override
-  String get labelClearWatchHistory => 'Clear Watch History';
+  String get labelClearWatchHistory => 'Effacer l'historique des vidéos regardées';
   @override
-  String get labelClearWatchHistoryDescription =>  'You\'re about to delete all your watch history videos, this action cannot be undone, proceed?';
+  String get labelClearWatchHistoryDescription =>  'Vous êtes sur le point de supprimer toutes les vidéos de votre historique de visionnage, cette action ne peut pas être annulée, continuer ?';
   @override
-  String get labelDelete => 'Delete';
+  String get labelDelete => 'Supprimer';
   @override
-  String get labelAppUpdate => 'App Update';
+  String get labelAppUpdate => 'Mise à jour de l'application';
   @override
-  String get labelWhatsNew => 'What\'s New';
+  String get labelWhatsNew => 'Quoi de neuf';
   @override
-  String get labelLater => 'Later';
+  String get labelLater => 'Plus tard';
   @override
-  String get labelUpdate => 'Update';
+  String get labelUpdate => 'Mise à jour';
   @override
-  String get labelUnsubscribe => 'Unsubscribe';
+  String get labelUnsubscribe => 'Se désabonner';
   @override
-  String get labelAudioFeatures => 'Audio Features';
+  String get labelAudioFeatures => 'Fonctionnalités audio';
   @override
-  String get labelVolumeBoost => 'Volume Boost';
+  String get labelVolumeBoost => 'Augmentation du volume';
   @override
-  String get labelNormalizeAudio => 'Normalize Audio';
+  String get labelNormalizeAudio => 'Normaliser l'audio';
   @override
-  String get labelSegmentedDownload => 'Segmented Download';
+  String get labelSegmentedDownload => 'Téléchargement segmenté';
   @override
-  String get labelEnableSegmentedDownload => 'Enable Segmented Download';
+  String get labelEnableSegmentedDownload => 'Activer le téléchargement segmenté';
   @override
-  String get labelEnableSegmentedDownloadDescription => 'This will download the whole audio file and then split it into the various enabled segments (or audio tracks) from the list below';
+  String get labelEnableSegmentedDownloadDescription => 'Cela téléchargera l'intégralité du fichier audio, puis le divisera en différents segments activés (ou pistes audio) dans la liste ci-dessous';
   @override
-  String get labelCreateMusicPlaylist => 'Create Music Playlist';
+  String get labelCreateMusicPlaylist => 'Créer une playlist musicale';
   @override
-  String get labelCreateMusicPlaylistDescription => 'Create music playlist from all downloaded and saved audio segments';
+  String get labelCreateMusicPlaylistDescription => 'Créer une playlist musicale à partir de tous les segments audio téléchargés et enregistrés';
   @override
-  String get labelApplyTags => 'Apply Tags';
+  String get labelApplyTags => 'Appliquer les balises';
   @override
-  String get labelApplyTagsDescription => 'Extract tags from MusicBrainz for all segments';
+  String get labelApplyTagsDescription => 'Extraire les balises de MusicBrainz pour tous les segments';
   @override
-  String get labelLoading => 'Loading';
+  String get labelLoading => 'Chargement';
   @override
-  String get labelMusicDownloadDescription => 'Select quality, convert and download audio only';
+  String get labelMusicDownloadDescription => 'Sélectionnez la qualité, convertissez et téléchargez uniquement l'audio';
   @override
-  String get labelVideoDownloadDescription =>  'Choose a video quality from the list and download it';
+  String get labelVideoDownloadDescription =>  'Choisissez une qualité vidéo dans la liste et téléchargez-la';
   @override
-  String get labelInstantDescription => 'Instantly start downloading as music';
+  String get labelInstantDescription => 'Commencez instantanément à télécharger de la musique';
   @override
   String get labelInstant => 'Instant';
   @override
-  String get labelCurrentQuality => 'Current Quality';
+  String get labelCurrentQuality => 'Qualité actuelle';
   @override
-  String get labelFastStreamingOptions => 'Fast Streaming Options';
+  String get labelFastStreamingOptions => 'Options de streaming rapide';
   @override
-  String get labelStreamingOptions => 'Streaming Options';
+  String get labelStreamingOptions => 'Options de streaming';
   @override
-  String get labelComments => 'Comments';
+  String get labelComments => 'Commentaires';
   @override
-  String get labelPinned => 'Pinned';
+  String get labelPinned => 'Épinglé';
   @override
-  String get labelLikedByAuthor => 'Liked by Author';
+  String get labelLikedByAuthor => 'Aimé par l'auteur';
   @override
   String get labelDescription => 'Description';
   @override
-  String get labelViews => 'Views';
+  String get labelViews => 'Vues';
   @override
-  String get labelPlayingNextIn => 'Playing next in';
+  String get labelPlayingNextIn => 'Jouer ensuite dans';
   @override
-  String get labelPlayNow => 'Play Now';
+  String get labelPlayNow => 'Lire maintenant';
   @override
-  String get labelLoadingPlaylist => 'Loading Playlist';
+  String get labelLoadingPlaylist => 'Chargement de la playlist';
   @override
-  String get labelPlaylistReachedTheEnd => 'Playlist reached the end';
+  String get labelPlaylistReachedTheEnd => 'La playlist a atteint la fin';
   @override
-  String get labelLiked => 'Liked';
+  String get labelLiked => 'J'ai aimé';
   @override
-  String get labelLike => 'Like';
+  String get labelLike => 'J'aime';
   @override
-  String get labelVideoRemovedFromFavorites => 'Video removed from favorites';
+  String get labelVideoRemovedFromFavorites => 'Vidéo supprimée des favoris';
   @override
-  String get labelVideoAddedToFavorites => 'Video added to favorites';
+  String get labelVideoAddedToFavorites => 'Vidéo ajoutée aux favoris';
   @override
-  String get labelPopupMode => 'Popup Mode';
+  String get labelPopupMode => 'Mode pop-up';
   @override
-  String get labelDownloaded => 'Downloaded';
+  String get labelDownloaded => 'Téléchargé';
   @override
-  String get labelShowPlaylist => 'Show Playlist';
+  String get labelShowPlaylist => 'Afficher la playlist';
   @override
-  String get labelCreatePlaylist => 'Create Playlist';
+  String get labelCreatePlaylist => 'Créer une playlist';
   @override
-  String get labelAddVideoToPlaylist => 'Add video to playlist';
+  String get labelAddVideoToPlaylist => 'Ajouter une vidéo à la playlist';
   @override
-  String get labelBackupDescription => 'Backup all of your local data into a single file that can be used to restore later';
+  String get labelBackupDescription => 'Sauvegardez toutes vos données locales dans un seul fichier qui peut être utilisé pour une restauration ultérieure';
   @override
-  String get labelBackupCreated => 'Backup Created';
+  String get labelBackupCreated => 'Sauvegarde créée';
   @override
-  String get labelBackupRestored => 'Backup Restored';
+  String get labelBackupRestored => 'Sauvegarde restaurée';
   @override
-  String get labelRestoreDescription => 'Restore all your data from a backup file';
+  String get labelRestoreDescription => 'Restaurez toutes vos données à partir d'un fichier de sauvegarde';
   @override
-  String get labelChannelSuggestions => 'Channel Suggestions';
+  String get labelChannelSuggestions => 'Suggestions de chaînes';
   @override
-  String get labelFetchingChannels => 'Fetching Channels';
+  String get labelFetchingChannels => 'Récupération des chaînes';
   @override
-  String get labelShareVideo => 'Shared Video';
+  String get labelShareVideo => 'Vidéo partagée';
   @override
-  String get labelShareDescription => 'Share with friends or other platforms';
+  String get labelShareDescription => 'Partager avec des amis ou d'autres plateformes';
   @override
-  String get labelRemoveFromPlaylists => 'Remove from playlist';
+  String get labelRemoveFromPlaylists => 'Supprimer de la playlist';
   @override
-  String get labelThisActionCannotBeUndone => 'This action cannot be undone';
+  String get labelThisActionCannotBeUndone => 'Cette action ne peut pas être annulée';
   @override
-  String get labelAddVideoToPlaylistDescription => 'Add to existing or new video playlist';
+  String get labelAddVideoToPlaylistDescription => 'Ajouter à une playlist vidéo existante ou nouvelle';
   @override
-  String get labelAddToPlaylists => 'Add to playlists';
+  String get labelAddToPlaylists => 'Ajouter aux playlists';
   @override
-  String get labelEditableOnceSaved => 'Editable once saved';
+  String get labelEditableOnceSaved => 'Modifiable une fois enregistré';
   @override
-  String get labelPlaylistRemoved => 'Playlist Removed';
+  String get labelPlaylistRemoved => 'Playlist supprimée';
   @override
-  String get labelPlaylistSaved => 'Playlist Saved';
+  String get labelPlaylistSaved => 'Playlist enregistrée';
   @override
-  String get labelRemoveFromFavorites => 'Remove from favorites';
+  String get labelRemoveFromFavorites => 'Supprimer des favoris';
   @override
-  String get labelRemoveFromFavoritesDescription => 'Remove this video from your favorites';
+  String get labelRemoveFromFavoritesDescription => 'Supprimer cette vidéo de vos favoris';
   @override
-  String get labelSaveToFavorites => 'Save to favorites';
+  String get labelSaveToFavorites => 'Enregistrer dans les favoris';
   @override
-  String get labelSaveToFavoritesDescription => 'Add video to your list of favorites';
+  String get labelSaveToFavoritesDescription => 'Ajoutez la vidéo à votre liste de favoris';
   @override
-  String get labelSharePlaylist => 'Share Playlist';
+  String get labelSharePlaylist => 'Partager la playlist';
   @override
-  String get labelRemoveThisVideoFromThisList => 'Remove this video from this list';
+  String get labelRemoveThisVideoFromThisList => 'Supprimer cette vidéo de cette liste';
   @override
-  String get labelEqualizer => 'Equalizer';
+  String get labelEqualizer => 'Égaliseur';
   @override
-  String get labelLoudnessEqualizationGain => 'Loudness Equalization Gain';
+  String get labelLoudnessEqualizationGain => 'Gain d'égalisation du niveau sonore';
   @override
-  String get labelSliders => 'Sliders';
+  String get labelSliders => 'Curseurs';
   @override
-  String get labelSave => 'Save';
+  String get labelSave => 'Sauvegarder';
   @override
-  String get labelPlaylistName => 'PlaylistName';
+  String get labelPlaylistName => 'Nom de la playlist';
   @override
-  String get labelCreateVideoPlaylist => 'Create Video Playlist';
+  String get labelCreateVideoPlaylist => 'Créer une playlist vidéo';
   @override
-  String get labelSearchFilters => 'Search Filters';
+  String get labelSearchFilters => 'Filtres de recherche';
   @override
-  String get labelAddToPlaylistDescription => 'Add to existing or new playlist';
+  String get labelAddToPlaylistDescription => 'Ajouter à une playlist existante ou nouvelle';
   @override
-  String get labelShareSong => 'Share Song';
+  String get labelShareSong => 'Partager la chanson';
   @override
-  String get labelShareSongDescription => 'Share with friends or other platforms';
+  String get labelShareSongDescription => 'Partager avec des amis ou d'autres plateformes';
   @override
-  String get labelEditTagsDescription => 'Open ID3 tags and artwork editor';
+  String get labelEditTagsDescription => 'Ouvrir les balises ID3 et l'éditeur d'illustrations';
   @override
-  String get labelContains => 'Contains';
+  String get labelContains => 'Contient';
   @override
-  String get labelPlaybackSpeed => 'Playback speed';
+  String get labelPlaybackSpeed => 'Vitesse de lecture';
 }
