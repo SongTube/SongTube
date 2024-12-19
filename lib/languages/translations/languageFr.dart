@@ -24,7 +24,7 @@ class LanguageFr extends Languages {
   @override
   String get labelIntroductionIsOver => "L'introduction est terminée";
   @override
-  String get labelEnjoy => "Apprécier";
+  String get labelEnjoy => "Profitez-en !";
   @override 
   String get labelGoHome => "Aller à l'accueil";
 
@@ -44,11 +44,11 @@ class LanguageFr extends Languages {
   @override
   String get labelQuickSearch => "Recherche rapide...";
   @override
-  String get labelTagsEditor => "Éditeur de Balises";
+  String get labelTagsEditor => "Éditeur de balises";
   @override
-  String get labelEditArtwork => "Modifier\nŒuvre d'art";
+  String get labelEditArtwork => "Modifier\nl'illustration";
   @override
-  String get labelDownloadAll => "Télécharger Tout";
+  String get labelDownloadAll => "Télécharger tout";
   @override 
   String get labelLoadingVideos => "Chargement des vidéos...";
   @override
@@ -199,50 +199,50 @@ class LanguageFr extends Languages {
   String get labelVideoFolderJustification => "Choisissez un dossier pour " +
     "les téléchargements de vidéos";
   @override
-  String get labelAlbumFolder => "Album Folder";
+  String get labelAlbumFolder => "Dossier d'album";
   @override
-  String get labelAlbumFolderJustification => "Create a Folder for each Song Album";
+  String get labelAlbumFolderJustification => "Créer un dossier pour chaque album";
   @override
-  String get labelDeleteCache => "Delete Cache";
+  String get labelDeleteCache => "Supprimer le cache";
   @override
-  String get labelDeleteCacheJustification => "Clear SongTube Cache";
+  String get labelDeleteCacheJustification => "Vider le cache de SongTube";
   @override
-  String get labelAndroid11Fix => "Android 11 Fix";
+  String get labelAndroid11Fix => "Correction d'Android 11";
   @override
-  String get labelAndroid11FixJustification => "Fixes Download issues on " +
+  String get labelAndroid11FixJustification => "Corrige les problèmes de téléchargement sur " +
     "Android 10 & 11";
   @override
-  String get labelBackup => "Backup";
+  String get labelBackup => "Sauvegarde";
   @override
-  String get labelBackupJustification => "Backup your media library";
+  String get labelBackupJustification => "Sauvegardez votre bibliothèque multimédia";
   @override
-  String get labelRestore => "Restore";
+  String get labelRestore => "Restauration";
   @override
-  String get labelRestoreJustification => "Restore your media library";
+  String get labelRestoreJustification => "Restaurez votre bibliothèque multimédia";
   @override
-  String get labelBackupLibraryEmpty => "Your Library is empty";
+  String get labelBackupLibraryEmpty => "Votre bibliothèque est vide";
   @override
-  String get labelBackupCompleted => "Backup Completed";
+  String get labelBackupCompleted => "Sauvegarde terminée";
   @override
-  String get labelRestoreNotFound => "Restore Not Found";
+  String get labelRestoreNotFound => "Restauration non trouvée";
   @override
-  String get labelRestoreCompleted => "Restore Completed";
+  String get labelRestoreCompleted => "Restauration terminée";
   @override
-  String get labelCacheIsEmpty => "Cache is Empty";
+  String get labelCacheIsEmpty => "Le cache est vide";
   @override
-  String get labelYouAreAboutToClear => "You're about to clear";
+  String get labelYouAreAboutToClear => "Vous êtes sur le point d'effacer";
 
   // Tags Editor TextFields
   @override
-  String get labelEditorTitle => "Title";
+  String get labelEditorTitle => "Titre";
   @override
-  String get labelEditorArtist => "Artist";
+  String get labelEditorArtist => "Artiste";
   @override
   String get labelEditorGenre => "Genre";
   @override
-  String get labelEditorDisc => "Disc";
+  String get labelEditorDisc => "Disque";
   @override
-  String get labelEditorTrack => "Track";
+  String get labelEditorTrack => "Piste";
   @override
   String get labelEditorDate => "Date";
   @override
@@ -250,154 +250,154 @@ class LanguageFr extends Languages {
 
   // Android 10 or 11 Detected Dialog
   @override
-  String get labelAndroid11Detected => "Android 10 or 11 Detected";
+  String get labelAndroid11Detected => "Android 10 ou 11 détecté";
   @override
-  String get labelAndroid11DetectedJustification => "To ensure the correct " +
-    "functioning of this app Downloads, on Android 10 and 11, access to all " +
-    "Files permission might be needed, this will be temporal and not required " +
-    "on future updates. You can also apply this fix in Settings.";
+  String get labelAndroid11DetectedJustification => "Pour assurer le bon " +
+    "fonctionnement des téléchargements de l'application, sur Android 10 et 11, accès à tous " +
+    "Une autorisation sur les fichiers peut être nécessaire. Elle sera temporaire et non obligatoire " +
+    "sur les futures mises à jour. Vous pouvez également appliquer ce correctif dans les paramètres.";
 
   // Music Player
   @override
-  String get labelPlayerSettings => "Player Settings";
+  String get labelPlayerSettings => "Paramètres du lecteur";
   @override
-  String get labelExpandArtwork => "Expand Artwork";
+  String get labelExpandArtwork => "Développer l'illustration";
   @override
-  String get labelArtworkRoundedCorners => "Artwork Rounded Corners";
+  String get labelArtworkRoundedCorners => "Coins arrondis de l’illustration";
   @override
-  String get labelPlayingFrom => "Playing From";
+  String get labelPlayingFrom => "Lecture à partir de";
   @override
-  String get labelBlurBackground => "Blur Background";
+  String get labelBlurBackground => "Arrière-plan flou";
 
   // Video Page
   @override
-  String get labelTags => "Tags";
+  String get labelTags => "Mots clés";
   @override
-  String get labelRelated => "Related";
+  String get labelRelated => "En rapport";
   @override
-  String get labelAutoPlay => "AutoPlay";
+  String get labelAutoPlay => "Lecture automatique";
 
   // Tags Pages
   @override
   String get labelAudioFormatNotCompatible =>
-    "Audio format not Compatible";
+    "Format audio non compatible";
   @override
-  String get labelNotSpecified => "Not Specified";
+  String get labelNotSpecified => "Non spécifié";
   @override
   String get labelPerformAutomaticTagging => 
-    "Perform Automatic Tagging";
+    "Effectuer un marquage automatique";
   @override
   String get labelSelectTagsfromMusicBrainz => 
-    "Select Tags from MusicBrainz";
+    "Sélectionner des balises à partir de MusicBrainz";
   @override
   String get labelSelectArtworkFromDevice =>
-    "Select Artwork from Device";
+    "Sélectionner une illustration à partir de l'appareil";
 
   // Telegram Join Channel Dialog
   @override
-  String get labelJoinTelegramChannel => "Join Telegram Channel!";
+  String get labelJoinTelegramChannel => "Rejoignez la chaîne Telegram !";
   @override
   String get labelJoinTelegramJustification =>
-    "Do you like SongTube? Please join the Telegram Channel! You will find " +
-    "Updates, Information, Development, Group Link and other Social links." +
+    "Vous aimez SongTube ? Rejoignez la chaîne Telegram ! Vous trouverez " +
+    "des mises à jour, des informations, le développement, le lien du groupe et d'autres liens sociaux." +
     "\n\n" +
-    "In case you have an issue or a great recommentation in your mind, " +
-    "please join the Group from the Channel and write it down! But take in mind " +
-    "you can only speak in English, thanks!";
+    "Si vous avez un problème ou une idée en tête, " +
+    "veuillez rejoindre le groupe depuis la chaîne et indiquez-le ! Mais gardez à l'esprit que " +
+    "vous ne pouvez parler qu'en anglais ! Merci";
   @override
-  String get labelRemindLater => "Remind Later";
+  String get labelRemindLater => "Rappeler plus tard";
 
   // Common Words (One word labels)
   @override
-  String get labelExit => "Exit";
+  String get labelExit => "Sortir";
   @override
-  String get labelSystem => "System";
+  String get labelSystem => "Système";
   @override
-  String get labelChannel => "Channel";
+  String get labelChannel => "Chaîne";
   @override
-  String get labelShare => "Share";
+  String get labelShare => "Partager";
   @override
   String get labelAudio => "Audio";
   @override
-  String get labelVideo => "Video";
+  String get labelVideo => "Vidéo";
   @override
-  String get labelDownload => "Download";
+  String get labelDownload => "Télécharger";
   @override
-  String get labelBest => "Best";
+  String get labelBest => "Meilleur";
   @override
   String get labelPlaylist => "Playlist";
   @override
   String get labelVersion => "Version";
   @override
-  String get labelLanguage => "Language";
+  String get labelLanguage => "Langue";
   @override
-  String get labelGrant => "Grant";
+  String get labelGrant => "Accorder";
   @override
-  String get labelAllow => "Allow";
+  String get labelAllow => "Permettre";
   @override
-  String get labelAccess => "Access";
+  String get labelAccess => "Accéder";
   @override
-  String get labelEmpty => "Empty";
+  String get labelEmpty => "Vide";
   @override
-  String get labelCalculating => "Calculating";
+  String get labelCalculating => "Calculateur";
   @override
-  String get labelCleaning => "Cleaning";
+  String get labelCleaning => "Nettoyage";
   @override
-  String get labelCancel => "Cancel";
+  String get labelCancel => "Annuler";
   @override
-  String get labelGeneral => "General";
+  String get labelGeneral => "Général";
   @override
-  String get labelRemove => "Remove";
+  String get labelRemove => "Retirer";
   @override
-  String get labelJoin => "Join";
+  String get labelJoin => "Rejoindre";
   @override
-  String get labelNo => "No";
+  String get labelNo => "Non";
   @override
-  String get labelLibrary => "Library";
+  String get labelLibrary => "Bibliothèque";
   @override
-  String get labelCreate => "Create";
+  String get labelCreate => "Créer";
   @override
   String get labelPlaylists => "Playlists";
   @override
-  String get labelQuality => "Quality";
+  String get labelQuality => "Qualité";
   @override
-  String get labelSubscribe => "Subscribe";
+  String get labelSubscribe => "S'abonner";
 
   // Other Translations
   @override
-  String get labelNoFavoriteVideos => 'No Favorite Videos';
+  String get labelNoFavoriteVideos => 'Aucune vidéo préférée';
   @override
-  String get labelNoFavoriteVideosDescription => 'Search for videos and save them as favorites. They will appear here';
+  String get labelNoFavoriteVideosDescription => 'Recherchez des vidéos et enregistrez-les dans vos favoris. Elles apparaîtront ici';
   @override
-  String get labelNoSubscriptions => 'No Subscriptions';
+  String get labelNoSubscriptions => ' Pas d'abonnement';
   @override
-  String get labelNoSubscriptionsDescription => 'Tap the button above to show suggested Channels!';
+  String get labelNoSubscriptionsDescription => 'Appuyez sur le bouton ci-dessus pour afficher les chaînes suggérées !';
   @override
-  String get labelNoPlaylists => 'No Playlists';
+  String get labelNoPlaylists => 'Pas de playlist';
   @override
-  String get labelNoPlaylistsDescription => 'Search for videos or playlists and save them. They will appear here';
+  String get labelNoPlaylistsDescription => 'Recherchez des vidéos ou des playlists et enregistrez-les. Elles apparaîtront ici';
   @override
-  String get labelSearch => 'Search';
+  String get labelSearch => 'Recherche';
   @override
-  String get labelSubscriptions => 'Subscriptions';
+  String get labelSubscriptions => 'Abonnements';
   @override
-  String get labelNoDownloadsCanceled => 'No Downloads Canceled';
+  String get labelNoDownloadsCanceled => 'Aucun téléchargement annulé';
   @override
-  String get labelNoDownloadsCanceledDescription => 'Good news! But if you cancel or something goes wrong with the download, you can check from here';
+  String get labelNoDownloadsCanceledDescription => 'Bonne nouvelle ! Mais si vous annulez ou si quelque chose ne va pas avec le téléchargement, vous pouvez vérifier à partir d'ici';
   @override
-  String get labelNoDownloadsYet => 'No Downloads Yet';
+  String get labelNoDownloadsYet => 'Aucun téléchargement pour le moment';
   @override
-  String get labelNoDownloadsYetDescription => 'Go home, search for something to download or wait for the queue!';
+  String get labelNoDownloadsYetDescription => 'Allez à l'accueil, cherchez quelque chose à télécharger ou attendez la file d’attente !';
   @override
-  String get labelYourQueueIsEmpty => 'Your queue is empty';
+  String get labelYourQueueIsEmpty => 'Votre file d'attente est vide';
   @override
-  String get labelYourQueueIsEmptyDescription => 'Go home and search for something to download!';
+  String get labelYourQueueIsEmptyDescription => 'Allez à l'accueil et cherchez quelque chose à télécharger !';
   @override
-  String get labelQueue => 'Queue';
+  String get labelQueue => 'File d'attente';
   @override
-  String get labelSearchDownloads => 'Search Downloads';
+  String get labelSearchDownloads => 'Rechercher des téléchargements';
   @override
-  String get labelWatchHistory => 'Watch History';
+  String get labelWatchHistory => 'Regarder l'historique';
   @override
   String get labelWatchHistoryDescription => 'Look at which videos you have seen';
   @override
